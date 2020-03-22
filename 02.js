@@ -1,4 +1,4 @@
-/* REVERSE */
+/* STRING REVERSE */
 let i = prompt('Input','');
 
 let reverse = function(i){
