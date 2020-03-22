@@ -1,12 +1,12 @@
 /* GRADE */
-let input = prompt('Input','');
+let i = prompt('Input','');
 
-let Output = function(input){
-  return (input >= 90 ? 'A' : 
-    (input >= 80 && input <= 89)  ? 'B' : 
-    (input >= 70 && input <= 79)  ? 'C' : 
-    (input >= 60 && input <= 69)  ? 'D' : 
-    (input <= 69)  ? 'E' : 'input is not valid' );
+let Grade = function(i){
+  return (i >= 90 ? 'A' : 
+    (i >= 80 && i <= 89)  ? 'B' : 
+    (i >= 70 && i <= 79)  ? 'C' : 
+    (i >= 60 && i <= 69)  ? 'D' : 
+    (i <= 69)  ? 'E' : 'input is not valid' );
 }
 
-console.log('Output : '+ Output(input));
+console.log('Output : '+ Grade(i));
