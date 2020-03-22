@@ -25,8 +25,56 @@
     - ngOnDestroy
 
 4. How to trigger an event and handling it in Angular ?
+
+    to trigger an event for example event `click`, we put directive `event binding` at the html tag, for example
+    ```html
+    <button (click)="onClick()">Show Me!</button>
+    ```
+
+    and to handle the trigger we put the `method` in angular component class in typescript file
+
+    ```typescript
+    export class AppComponent {
+      onClick() {
+        console.log('Here you go!');
+      }
+    }
+    ```
 5. How to handling input in Angular ?
+
+    to handle input in Angular. First, we need to import `Input` from `@angular/ core`, 
+    ```typescript
+    import { Input } from '@angular/core';
+    ```
+    then, we can use `@input()` decorator in component class
+    ```typescript
+    @input() student;
+    ```
 6. How to make class html tag receive property ?
+    
+    using `interpolation {{...}}`, for example :
+    ```html
+    <p>{{student.name}}</p>
+    ```
+
 7. How to make conditional rendering in Angular ?
+
+    using structural directive `*ngIf`, for example
+    ```html
+    <p *ngIf="student.age">
+        Age : {{student.age}}
+    </p>
+    ```
+
 8. How we can render list in Angular ?
+
+    using structural directive `*ngFor`, for example
+    ```html
+    <div *ngFor="let student of students">
+        <h3>{{student.name}}</h3>
+    </div>
+    ```
+
 9. What is RxJS ?
+
+    stand for Reactive Extensions for JavaScript is a library for reactive programming, it has observable creation functions which is useful for asynchronous code.
