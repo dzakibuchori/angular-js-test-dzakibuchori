@@ -5,6 +5,9 @@
     I just knew it as MVC for frontend before. But after some reading and learning, I knew that angular is good for making SPAs, the framework is using modular approach and it has reusable code system. for testing it also has unit testing.
 
 2. How to define data in Angular ?
+  
+    we define data in component class in typescript file
+    
 3. In Angular What lifecycle you can run after instance created ?
 4. How to trigger an event and handling it in Angular ?
 5. How to handling input in Angular ?
